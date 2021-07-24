@@ -189,6 +189,10 @@ input {
   gap: 1.5rem;
 }
 
+.place__data {
+  background-color: rgba(232,242,242, 0.7);
+  padding: .75rem .75rem 1rem;
+}
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
@@ -582,7 +586,8 @@ input {
 
 /*=============== PLACES ===============*/
 .place__card, .place__img {
-  height: 230px;
+  width: 15em;
+  height: 35em;
 }
 
 .place__container {
@@ -593,6 +598,7 @@ input {
 .place__card {
   position: relative;
   overflow: var(--img-hidden);
+  
 }
 
 .place__card:hover .place__img {
@@ -604,7 +610,7 @@ input {
 }
 
 .place__content, .place__title {
-  color: var(--white-color);
+  color: #262828;
 }
 
 .place__content {
@@ -616,13 +622,18 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: .75rem .75rem 1rem;
 }
 
 .place__rating {
   align-self: flex-end;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 3em;
+  text-decoration: solid;
+  background-color: rgba(255,255,255, 0.7);
+  padding: .5rem;
+  padding-right: 0.38em;
 }
 
 .place__rating-icon {
@@ -711,6 +722,10 @@ input {
   row-gap: 5rem;
 }
 
+.footer__data div {
+  display: flex;
+}
+
 .footer__content {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
@@ -733,6 +748,15 @@ input {
   font-size: 1.25rem;
   color: var(--title-color);
   margin-right: var(--mb-1-25);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social:hover {
+  background-color: rgba(255,255,255, 0.2);
 }
 
 .footer__subtitle {
@@ -817,10 +841,14 @@ input {
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (min-width: 320px) and (max-width: 720px) {
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
+  }
+  .place__card, .place__img {
+    width: 13em;
+    height: 230px;
   }
   .experience__content {
     padding: 0;
@@ -838,6 +866,24 @@ input {
   .experience__img,
   .video__container {
     padding: 0;
+  }
+  .discover__data {
+    position: absolute;
+    right: -0rem;
+    bottom: 0.2em;
+    margin: 0rem;
+    padding-left: 2rem;
+    padding-top: 1em;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(255,255,255, 0.8);
+  }
+  
+  .discover__title {
+    color: #0A8089;
+  }
+  .discover__description {
+    color: #262828;
   }
 }
 
@@ -907,7 +953,7 @@ input {
   .scroll-header .change-theme {
     color: var(--text-color);
   }
-  .section {
+  .section, .place-section {
     padding: 7rem 0 2rem;
   }
   .home__container {
