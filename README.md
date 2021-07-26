@@ -1,7 +1,8 @@
 # Traveloma Website
 
 A travel website which shows some pretty amazing luxury coasts around the world.
-[Live Demo](traveloma-7d5786.netlify.app)
+ 
+ [Live Demo](traveloma-7d5786.netlify.app)
 
 <img src="./Screenshot (216).png" alt="the screenshot of the app large screen"/>
 
