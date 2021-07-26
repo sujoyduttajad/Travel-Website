@@ -1,6 +1,6 @@
 # Traveloma Website
 
-A responsive travel website which shows some pretty amazing luxury coasts around the world.
+A responsive travel website built with HTML, CSSS & JS which has scroll animations, swipe animations, and shows some pretty amazing luxury coasts around the world.
  
  [Live Demo](traveloma-7d5786.netlify.app)
 
